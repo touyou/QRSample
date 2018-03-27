@@ -3,7 +3,7 @@
 //  QRSample
 //
 //  Created by 藤井陽介 on 2018/03/27.
-//  Copyright © 2018 Swimee. All rights reserved.
+//  Copyright © 2018 touyou. All rights reserved.
 //
 
 import UIKit
