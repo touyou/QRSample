@@ -18,6 +18,8 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
     // MARK: - ここから
     
+    @IBOutlet var label: UILabel!
+    
     // QRリーダーになってくれるViewController
     lazy var readerViewController: QRCodeReaderViewController = {
         
@@ -41,6 +43,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             if let costString = result?.value {
                 let cost = Int(costString)  // これでcostに値段の数字が入るはず（QRをその形式で作成すれば）
                 // QR作成サービス : https://qr.quel.jp/qr_img_draw.php
+                self.label.text = costString
             }
         }
         
