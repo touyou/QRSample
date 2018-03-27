@@ -12,6 +12,7 @@
 		4610AE2D2069CA430032B402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4610AE2B2069CA430032B402 /* Main.storyboard */; };
 		4610AE2F2069CA430032B402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4610AE2E2069CA430032B402 /* Assets.xcassets */; };
 		4610AE322069CA430032B402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4610AE302069CA430032B402 /* LaunchScreen.storyboard */; };
+		D19BC45BBD96B1D1EF4B2040 /* Pods_QRSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F601FCC762A32E8B75730DFE /* Pods_QRSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		4610AE2E2069CA430032B402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4610AE312069CA430032B402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4610AE332069CA430032B402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495A08561D1DC4CDF907661D /* Pods-QRSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRSample/Pods-QRSample.debug.xcconfig"; sourceTree = "<group>"; };
+		5A541EBC700835FB0296CF88 /* Pods-QRSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRSample/Pods-QRSample.release.xcconfig"; sourceTree = "<group>"; };
+		F601FCC762A32E8B75730DFE /* Pods_QRSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19BC45BBD96B1D1EF4B2040 /* Pods_QRSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4610AE262069CA430032B402 /* QRSample */,
 				4610AE252069CA430032B402 /* Products */,
+				EBDCDB9EB9612E53404C0098 /* Pods */,
+				CF6931BAB6BB9CB9ED0C341E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = QRSample;
 			sourceTree = "<group>";
 		};
+		CF6931BAB6BB9CB9ED0C341E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F601FCC762A32E8B75730DFE /* Pods_QRSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBDCDB9EB9612E53404C0098 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				495A08561D1DC4CDF907661D /* Pods-QRSample.debug.xcconfig */,
+				5A541EBC700835FB0296CF88 /* Pods-QRSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4610AE362069CA430032B402 /* Build configuration list for PBXNativeTarget "QRSample" */;
 			buildPhases = (
+				C804AA0A61847901F3EB806C /* [CP] Check Pods Manifest.lock */,
 				4610AE202069CA430032B402 /* Sources */,
 				4610AE212069CA430032B402 /* Frameworks */,
 				4610AE222069CA430032B402 /* Resources */,
+				52FBF86D8D42DEEF3752B4E5 /* [CP] Embed Pods Frameworks */,
+				B596F6D7AE4214EC85E859D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52FBF86D8D42DEEF3752B4E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QRSample/Pods-QRSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRSample/Pods-QRSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B596F6D7AE4214EC85E859D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRSample/Pods-QRSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C804AA0A61847901F3EB806C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4610AE202069CA430032B402 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		4610AE372069CA430032B402 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 495A08561D1DC4CDF907661D /* Pods-QRSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		4610AE382069CA430032B402 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A541EBC700835FB0296CF88 /* Pods-QRSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
