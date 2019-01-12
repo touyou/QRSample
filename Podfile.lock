@@ -4,9 +4,13 @@ PODS:
 DEPENDENCIES:
   - QRCodeReader.swift (~> 8.1.1)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - QRCodeReader.swift
+
 SPEC CHECKSUMS:
   QRCodeReader.swift: b164a681887de276d405ff02bce854d82cd6360b
 
 PODFILE CHECKSUM: bb56185df38c99c1b3f87df508d0c2118285ce86
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

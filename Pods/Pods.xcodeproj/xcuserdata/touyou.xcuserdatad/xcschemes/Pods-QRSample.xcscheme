@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE3C7FEFF0B9CF2DB20274B6D1B9C0CE"
+               BlueprintIdentifier = "018AC032EB640CFFF8EAD9F0B886B8A4"
                BuildableName = "Pods_QRSample.framework"
                BlueprintName = "Pods-QRSample"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE3C7FEFF0B9CF2DB20274B6D1B9C0CE"
+            BlueprintIdentifier = "018AC032EB640CFFF8EAD9F0B886B8A4"
             BuildableName = "Pods_QRSample.framework"
             BlueprintName = "Pods-QRSample"
             ReferencedContainer = "container:Pods.xcodeproj">

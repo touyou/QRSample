@@ -41,8 +41,9 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             print(result?.value) // ここに設定したテキストがStringで入っている
             // 例
             if let costString = result?.value {
-                let cost = Int(costString)  // これでcostに値段の数字が入るはず（QRをその形式で作成すれば）
+
                 // QR作成サービス : https://qr.quel.jp/qr_img_draw.php
+                // ここでQRに関する処理を行う
                 self.label.text = costString
             }
         }
